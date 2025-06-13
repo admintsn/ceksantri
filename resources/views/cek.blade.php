@@ -42,7 +42,7 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 
-<body class="font-raleway antialiased bg-tsn-bg no-scrollbar h-screen">
+<body class="font-assistant antialiased bg-tsn-bg no-scrollbar h-screen">
     {{-- header --}}
     <div class="flex sticky top-0 h-24 z-50 bg-tsn-header border-b-4 border-tsn-accent justify-center">
         <div class="w-fit mt-4 me-4">

@@ -24,6 +24,7 @@ export default {
                 sans: ["Figtree", ...defaultTheme.fontFamily.sans],
                 'cormorant' : ['Cormorant-Infant'],
                 'raleway' : ['Raleway'],
+                'assistant' : ['Assistant'],
             },
         },
     },
