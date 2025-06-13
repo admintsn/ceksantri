@@ -31,14 +31,16 @@ class CekSantri extends Component implements HasForms, HasTable
 
     public function ceknismsantri()
     {
-        $ceknism = Santri::where('nism', $this->ceknism)->whereHas('statussantri', function ($query) {
-            $query->where('stat_santri_id', 3);
-        })
+        $ceknism = Santri::where('nism', $this->ceknism)
             ->count();
 
         if ($ceknism == 0) {
             throw ValidationException::withMessages([
                 'ceknism' => trans('auth.nismtidakditemukan'),
+            ]);
+        } elseif ($ceknism != 0) {
+            throw ValidationException::withMessages([
+                'ceknism' => trans('auth.nismditemukan'),
             ]);
         }
     }
