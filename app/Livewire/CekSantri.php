@@ -111,7 +111,7 @@ class CekSantri extends Component implements HasForms, HasTable
 
                     TextColumn::make('tanggal_lahir')
                         ->label('Tanggal Lahir')
-                        ->date('d M Y')
+                        // ->date('d M Y')
                         ->grow(false)
                         ->description(new HtmlString('<br><strong>Tanggal Lahir:</strong>'), position: 'above'),
 
