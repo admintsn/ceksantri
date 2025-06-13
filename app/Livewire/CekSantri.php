@@ -69,7 +69,7 @@ class CekSantri extends Component implements HasForms, HasTable
                         ->weight(FontWeight::Bold)
                         ->html()
                         ->default(function ($record) {
-                            $getstatussantri = StatusSantri::where('id', $record->id)->first();
+                            $getstatussantri = StatusSantri::where('santri_id', $record->id)->first();
 
                             if ($getstatussantri?->stat_santri_id == 3) {
                                 return 'Aktif';
@@ -78,7 +78,7 @@ class CekSantri extends Component implements HasForms, HasTable
                             }
                         })
                         ->color(function ($record) {
-                            $getstatussantri = StatusSantri::where('id', $record->id)->first();
+                            $getstatussantri = StatusSantri::where('santri_id', $record->id)->first();
 
                             if ($getstatussantri?->stat_santri_id == 3) {
                                 return 'tsn-bg-header';
@@ -87,7 +87,7 @@ class CekSantri extends Component implements HasForms, HasTable
                             }
                         })
                         ->icon(function ($record) {
-                            $getstatussantri = StatusSantri::where('id', $record->id)->first();
+                            $getstatussantri = StatusSantri::where('santri_id', $record->id)->first();
 
                             if ($getstatussantri?->stat_santri_id == 3) {
                                 return 'heroicon-o-check-circle';
