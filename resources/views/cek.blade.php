@@ -4,14 +4,14 @@
 <head>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BZJHVHE7EZ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VTWLSF5N3Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-BZJHVHE7EZ');
-    </script>
+  gtag('config', 'G-VTWLSF5N3Y');
+</script>
     <meta charset="utf-8">
 
     <meta name="application-name" content="{{ config('app.name') }}">
