@@ -10,7 +10,7 @@
                     <form wire:submit="ceknismsantri">
                         <!--Username -->
                         <div class="pt-4">
-                            <x-input-label for="ceknism" :value="__('Masukkan nomor NISM')" />
+                            <x-input-label for="ceknism" :value="__('Masukkan nomor NISM (6 digit)')" />
                             <x-text-input id="ceknism" class="block mt-1 w-full" type="text" name="ceknism"
                                 minlength="6" maxlength="6" :value="old('ceknism')" required autocomplete="ceknism"
                                 wire:model="ceknism" />
