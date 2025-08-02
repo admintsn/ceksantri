@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Models\Santri;
 use App\Models\StatusSantri;
 use App\Models\TahunBerjalan;
+use App\Models\Walisantri;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
@@ -18,6 +19,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\HtmlString;
 use Illuminate\Validation\ValidationException;
 use Livewire\Component;
@@ -117,11 +119,10 @@ class CekSantri extends Component implements HasForms, HasTable
                         ->grow(false)
                         ->description(new HtmlString('<br><strong>Tanggal Lahir:</strong>'), position: 'above'),
 
-                    TextColumn::make('walisantri.ik_nama_lengkap')
-                        ->label('Nama Ibu')
+                    TextColumn::make('walisantri.ak_nama_lengkap')
+                        ->label('Nama Ayah')
                         ->grow(false)
-                        ->description(new HtmlString('<br><strong>Nama Ibu Kandung:</strong>'), position: 'above'),
-
+                        ->description(new HtmlString('<br><strong>Nama Ayah Kandung:</strong>'), position: 'above'),
 
                 ])
 
